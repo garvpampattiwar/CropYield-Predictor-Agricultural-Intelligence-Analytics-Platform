@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-zinc-200 dark:border-zinc-800;
+  }
+  body {
+    @apply font-sans bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased;
+  }
+}
+
+/* Tabular figures for numbers */
+.num-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: "tnum" 1, "cv05" 1;
+}
+
+/* Hairline borders and subtle card styling */
+.card-subtle {
+  @apply bg-white dark:bg-zinc-900/90 border border-zinc-200/80 dark:border-zinc-800/80 rounded-card transition-all duration-200;
+}
+
+.card-subtle-hover {
+  @apply card-subtle hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:hover:shadow-[0_2px_8px_rgba(0,0,0,0.4)];
+}
+
+/* Controls */
+.input-subtle {
+  @apply bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-control px-3 py-1.5 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors;
+}
+
+/* Pulse animation for Live indicator */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+}
+
+.animate-live-dot {
+  animation: live-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Realtime telemetry highlight fade */
+@keyframes row-highlight {
+  0% { background-color: rgba(5, 150, 105, 0.12); }
+  100% { background-color: transparent; }
+}
+
+.highlight-on-update {
+  animation: row-highlight 2s ease-out;
+}
+
+/* Minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+}

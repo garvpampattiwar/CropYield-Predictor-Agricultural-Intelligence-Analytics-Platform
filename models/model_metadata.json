@@ -1,0 +1,102 @@
+{
+    "champion_model_name": "Random Forest",
+    "export_timestamp": "2026-11-11 17:30:52",
+    "metrics": {
+        "cv_r2_mean": 0.9828,
+        "cv_r2_std": 0.0021,
+        "cv_mae": 4827.33,
+        "cv_rmse": 11062.61,
+        "test_r2": 0.9809,
+        "test_mae": 4831.81,
+        "test_rmse": 11756.05
+    },
+    "target_variable": "hg/ha_yield",
+    "target_unit": "hg/ha (10,000 hg/ha = 1 metric ton/ha)",
+    "features_in": [
+        "Area",
+        "Item",
+        "Year",
+        "average_rain_fall_mm_per_year",
+        "pesticides_tonnes",
+        "avg_temp"
+    ],
+    "total_training_records": 20745,
+    "total_test_records": 5187,
+    "hyperparameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": 22,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 4,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 70,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "all_models_ranked": [
+        {
+            "Model": "Random Forest",
+            "CV R2 (Mean)": 0.9828,
+            "CV R2 (Std)": 0.0021,
+            "CV MAE": 4827.33,
+            "CV RMSE": 11062.61,
+            "Test R2": 0.9809,
+            "Test MAE": 4831.81,
+            "Test RMSE": 11756.05,
+            "Training Time (s)": 98.83
+        },
+        {
+            "Model": "XGBoost",
+            "CV R2 (Mean)": 0.9611,
+            "CV R2 (Std)": 0.0027,
+            "CV MAE": 9782.53,
+            "CV RMSE": 16650.8,
+            "Test R2": 0.9592,
+            "Test MAE": 9933.74,
+            "Test RMSE": 17191.95,
+            "Training Time (s)": 6.11
+        },
+        {
+            "Model": "Gradient Boosting",
+            "CV R2 (Mean)": 0.9434,
+            "CV R2 (Std)": 0.0037,
+            "CV MAE": 12042.71,
+            "CV RMSE": 20091.77,
+            "Test R2": 0.9426,
+            "Test MAE": 12154.14,
+            "Test RMSE": 20398.15,
+            "Training Time (s)": 92.64
+        },
+        {
+            "Model": "Linear Regression",
+            "CV R2 (Mean)": 0.7483,
+            "CV R2 (Std)": 0.0052,
+            "CV MAE": 29628.64,
+            "CV RMSE": 42400.73,
+            "Test R2": 0.7487,
+            "Test MAE": 29911.63,
+            "Test RMSE": 42673.99,
+            "Training Time (s)": 1.31
+        },
+        {
+            "Model": "Ridge Regression",
+            "CV R2 (Mean)": 0.7461,
+            "CV R2 (Std)": 0.0051,
+            "CV MAE": 29246.4,
+            "CV RMSE": 42584.13,
+            "Test R2": 0.7465,
+            "Test MAE": 29612.09,
+            "Test RMSE": 42864.54,
+            "Training Time (s)": 0.54
+        }
+    ]
+}

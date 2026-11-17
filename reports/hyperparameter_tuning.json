@@ -1,0 +1,33 @@
+{
+    "Random Forest": {
+        "baseline_r2": 0.9329,
+        "tuned_r2": 0.9378,
+        "r2_delta": 0.0048,
+        "best_params": {
+            "n_estimators": 70,
+            "min_samples_split": 2,
+            "max_depth": 22
+        },
+        "best_cv_score": 0.9371
+    },
+    "XGBoost_RandomizedSearch": {
+        "baseline_r2": 0.932,
+        "tuned_r2": 0.9297,
+        "r2_delta": -0.0023,
+        "best_params": {
+            "n_estimators": 120,
+            "max_depth": 6,
+            "learning_rate": 0.15
+        },
+        "best_cv_score": 0.9211
+    },
+    "XGBoost_Optuna": {
+        "best_trial_val_r2": 0.9396,
+        "final_test_r2": 0.9481,
+        "best_params": {
+            "n_estimators": 120,
+            "max_depth": 9,
+            "learning_rate": 0.17799734576938775
+        }
+    }
+}

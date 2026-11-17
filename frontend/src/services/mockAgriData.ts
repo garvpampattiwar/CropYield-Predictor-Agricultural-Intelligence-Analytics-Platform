@@ -1,0 +1,107 @@
+import { MarketPrice } from '../types';
+
+export const MOCK_MANDI_PRICES: MarketPrice[] = [
+  { id: 'm1', commodity: 'Wheat (Lokwan)', mandi: 'Nashik APMC', state: 'Maharashtra', minPrice: 2550, maxPrice: 2890, modalPrice: 2740, change24h: 3.4, recommendation: 'Strong Sell' },
+  { id: 'm2', commodity: 'Potatoes (Jyoti)', mandi: 'Lasalgaon', state: 'Maharashtra', minPrice: 1450, maxPrice: 1820, modalPrice: 1680, change24h: -1.8, recommendation: 'Hold' },
+  { id: 'm3', commodity: 'Maize (Hybrid)', mandi: 'Pimpalgaon', state: 'Maharashtra', minPrice: 2100, maxPrice: 2380, modalPrice: 2260, change24h: 1.2, recommendation: 'Hold' },
+  { id: 'm4', commodity: 'Soybean (Yellow)', mandi: 'Indore', state: 'Madhya Pradesh', minPrice: 4600, maxPrice: 5120, modalPrice: 4890, change24h: 2.1, recommendation: 'Accumulate' },
+  { id: 'm5', commodity: 'Basmati Rice', mandi: 'Karnal', state: 'Haryana', minPrice: 3800, maxPrice: 4450, modalPrice: 4200, change24h: 0.8, recommendation: 'Hold' },
+  { id: 'm6', commodity: 'Cotton (Medium Staple)', mandi: 'Amravati', state: 'Maharashtra', minPrice: 6800, maxPrice: 7550, modalPrice: 7240, change24h: -0.5, recommendation: 'Strong Sell' }
+];
+
+export const MOCK_DISEASE_CATALOG = [
+  {
+    name: 'Yellow Rust (Puccinia striiformis)',
+    crop: 'Wheat',
+    confidence: 94.2,
+    severity: 'High',
+    symptoms: 'Yellow-orange pustules arranged in linear stripes along leaf veins, premature senescence, shriveled grains.',
+    organicTreatment: 'Spray 5% Neem seed kernel extract (NSKE) or bio-fungicide Trichoderma viride @ 5g/liter.',
+    chemicalTreatment: 'Foliar spray of Propiconazole 25% EC (Tilt) @ 1 ml/liter or Tebuconazole @ 1.2 ml/liter of water.',
+  },
+  {
+    name: 'Early Blight (Alternaria solani)',
+    crop: 'Potatoes',
+    confidence: 91.8,
+    severity: 'Medium',
+    symptoms: 'Concentric dark brown rings forming target-board spots on lower older foliage.',
+    organicTreatment: 'Copper oxychloride 50 WP @ 2.5g/liter + Trichoderma harzianum soil drench.',
+    chemicalTreatment: 'Mancozeb 75% WP @ 2g/liter or Azoxystrobin 23% SC @ 1 ml/liter.',
+  },
+  {
+    name: 'Fall Armyworm (Spodoptera frugiperda)',
+    crop: 'Maize',
+    confidence: 88.5,
+    severity: 'Critical',
+    symptoms: 'Window pane leaf skeletonization and whorl feeding with coarse frass deposits.',
+    organicTreatment: 'Install 5 pheromone traps/acre; release egg parasitoid Trichogramma pretiosum @ 50,000/acre.',
+    chemicalTreatment: 'Emamectin Benzoate 5% SG @ 0.4g/liter or Chlorantraniliprole 18.5% SC @ 0.3 ml/liter.',
+  }
+];
+
+export const I18N_STRINGS = {
+  en: {
+    dashboard: 'Dashboard',
+    predictYield: 'Predict Yield',
+    fieldMgmt: 'Field Management',
+    weatherClimate: 'Weather & Climate',
+    soilHealth: 'Soil & Crop Health',
+    analytics: 'Analytics & Reports',
+    marketPrices: 'Market Prices (Mandi)',
+    alerts: 'Alerts & Notifications',
+    settings: 'Settings',
+    adminPanel: 'Admin Panel',
+    predictedYield: 'Predicted Yield',
+    confidence: 'Confidence',
+    activeFields: 'Active Fields',
+    weatherRisk: 'Weather Risk',
+    soilHealthIndex: 'Soil Health Index',
+    liveTelemetry: 'Live Sensor Telemetry',
+    aiInsights: 'AI Agronomic Insights',
+    getStarted: 'Get Started Free',
+    farmLocation: 'Farm Location',
+  },
+  hi: {
+    dashboard: 'डैशबोर्ड',
+    predictYield: 'फसल उपज अनुमान',
+    fieldMgmt: 'खेत प्रबंधन',
+    weatherClimate: 'मौसम और जलवायु',
+    soilHealth: 'मृदा एवं फसल स्वास्थ्य',
+    analytics: 'एनालिटिक्स और रिपोर्ट्स',
+    marketPrices: 'मंडी भाव (लाइव)',
+    alerts: 'सूचनाएं और चेतावनियां',
+    settings: 'सेटिंग्स',
+    adminPanel: 'व्यवस्थापक पैनल',
+    predictedYield: 'अनुमानित उपज',
+    confidence: 'सटीकता विश्वास',
+    activeFields: 'सक्रिय खेत',
+    weatherRisk: 'मौसम जोखिम स्कोर',
+    soilHealthIndex: 'मृदा स्वास्थ्य सूचकांक',
+    liveTelemetry: 'लाइव सेंसर डेटा',
+    aiInsights: 'कृषि विशेषज्ञ सलाह',
+    getStarted: 'मुफ्त शुरुआत करें',
+    farmLocation: 'खेत का स्थान',
+  },
+  mr: {
+    dashboard: 'डॅशबोर्ड',
+    predictYield: 'पीक उत्पादन अंदाज',
+    fieldMgmt: 'शेत व्यवस्थापन',
+    weatherClimate: 'हवामान आणि पाऊस',
+    soilHealth: 'माती व पीक आरोग्य',
+    analytics: 'अहवाल आणि विश्लेषण',
+    marketPrices: 'थेट बाजार भाव (मंडी)',
+    alerts: 'सूचना व इशारे',
+    settings: 'सेटिंग्ज',
+    adminPanel: 'प्रशासक पॅनेल',
+    predictedYield: 'अंदाजित उत्पादन',
+    confidence: 'विश्वासार्हता',
+    activeFields: 'सक्रिय शेते',
+    weatherRisk: 'हवामान धोका गुण',
+    soilHealthIndex: 'माती आरोग्य निर्देशांक',
+    liveTelemetry: 'थेट सेन्सर आकडेवारी',
+    aiInsights: 'एआय कृषी सल्ला',
+    getStarted: 'मोफत सुरुवात करा',
+    farmLocation: 'शेताचे ठिकाण',
+  }
+};
+

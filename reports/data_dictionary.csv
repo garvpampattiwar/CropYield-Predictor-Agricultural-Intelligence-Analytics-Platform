@@ -1,0 +1,8 @@
+Column Name,Standard Concept,Data Type,Non-Null Count,Null Count,Null Percentage (%),Unique Values,Sample Values,Unit / Metric,Description
+Area,area,object,28242,0,0.0,101,"Albania, Algeria, Angola...",Categorical (ISO/Name),"Geographic territory, country, or administrative state where crops were harvested"
+Item,crop,object,28242,0,0.0,10,"Maize, Potatoes, Rice, paddy...",Categorical (Crop Name),"Agricultural commodity or crop type (e.g. Maize, Potatoes, Wheat, Rice)"
+Year,year,int64,28242,0,0.0,23,"1990, 1991, 1992...",Years (AD),Harvest calendar year for the observed agricultural season
+hg/ha_yield,target,int64,28242,0,0.0,11514,"36613, 66667, 23333...","hg/ha (10,000 hg/ha = 1 t/ha)","Crop yield measured in hectograms per hectare (1 hg = 100g, 10,000 hg/ha = 1 metric ton/ha)"
+average_rain_fall_mm_per_year,rainfall,float64,28242,0,0.0,100,"1485.0, 89.0, 1010.0...",mm / year,Annual cumulative precipitation in millimeters (mm)
+pesticides_tonnes,pesticides,float64,28242,0,0.0,1673,"121.0, 201.0, 251.0...",Metric Tonnes,Total quantity of formulated pesticide active ingredients applied in metric tonnes
+avg_temp,temperature,float64,28242,0,0.0,1831,"16.37, 15.36, 16.06...",Degrees Celsius (°C),Mean ambient air temperature recorded over the crop vegetative cycle in degrees Celsius (°C)

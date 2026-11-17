@@ -1,0 +1,95 @@
+{
+    "pre_cleaning_audit": {
+        "initial_shape": [
+            28242,
+            7
+        ],
+        "duplicate_records": 2310,
+        "total_missing_cells": 0,
+        "missing_per_column": {
+            "Area": 0,
+            "Item": 0,
+            "Year": 0,
+            "hg/ha_yield": 0,
+            "average_rain_fall_mm_per_year": 0,
+            "pesticides_tonnes": 0,
+            "avg_temp": 0
+        },
+        "numerical_columns": [
+            "Year",
+            "hg/ha_yield",
+            "average_rain_fall_mm_per_year",
+            "pesticides_tonnes",
+            "avg_temp"
+        ],
+        "categorical_columns": [
+            "Area",
+            "Item"
+        ],
+        "outliers_iqr": {
+            "Year": {
+                "q25": 1995.0,
+                "q75": 2008.0,
+                "iqr": 13.0,
+                "lower_bound": 1975.5,
+                "upper_bound": 2027.5,
+                "outlier_count": 0,
+                "outlier_pct": 0.0
+            },
+            "hg/ha_yield": {
+                "q25": 19919.25,
+                "q75": 104676.75,
+                "iqr": 84757.5,
+                "lower_bound": -107217.0,
+                "upper_bound": 231813.0,
+                "outlier_count": 2059,
+                "outlier_pct": 7.29
+            },
+            "average_rain_fall_mm_per_year": {
+                "q25": 593.0,
+                "q75": 1668.0,
+                "iqr": 1075.0,
+                "lower_bound": -1019.5,
+                "upper_bound": 3280.5,
+                "outlier_count": 0,
+                "outlier_pct": 0.0
+            },
+            "pesticides_tonnes": {
+                "q25": 1702.0,
+                "q75": 48687.88,
+                "iqr": 46985.88,
+                "lower_bound": -68776.82,
+                "upper_bound": 119166.7,
+                "outlier_count": 1418,
+                "outlier_pct": 5.02
+            },
+            "avg_temp": {
+                "q25": 16.7,
+                "q75": 26.0,
+                "iqr": 9.3,
+                "lower_bound": 2.76,
+                "upper_bound": 39.95,
+                "outlier_count": 34,
+                "outlier_pct": 0.12
+            }
+        },
+        "range_violations": {}
+    },
+    "cleaning_summary": {
+        "initial_rows": 28242,
+        "final_rows": 25932,
+        "duplicates_removed": 2310,
+        "retained_percentage": 91.82,
+        "numerical_columns": [
+            "Year",
+            "hg/ha_yield",
+            "average_rain_fall_mm_per_year",
+            "pesticides_tonnes",
+            "avg_temp"
+        ],
+        "categorical_columns": [
+            "Area",
+            "Item"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "model_evaluated": "Random Forest",
+    "test_r2": 0.9809,
+    "test_mae_hg_ha": 4831.81,
+    "test_mae_t_ha": 0.483,
+    "test_rmse_hg_ha": 11756.05,
+    "test_rmse_t_ha": 1.176,
+    "residual_mean_tha": 0.0297,
+    "residual_std_tha": 1.1752,
+    "residual_skewness": 2.869,
+    "residual_kurtosis": 50.449,
+    "top_features": [
+        {
+            "feature": "Item_Potatoes",
+            "importance": 0.37432252498328383
+        },
+        {
+            "feature": "Item_Rice, paddy",
+            "importance": 0.06957656158806795
+        },
+        {
+            "feature": "Item_Sweet potatoes",
+            "importance": 0.0663003211497398
+        },
+        {
+            "feature": "pesticide_to_rain_ratio",
+            "importance": 0.06397320056665272
+        },
+        {
+            "feature": "Area_India",
+            "importance": 0.05238499458728132
+        },
+        {
+            "feature": "average_rain_fall_mm_per_year",
+            "importance": 0.02720454435510192
+        },
+        {
+            "feature": "Item_Maize",
+            "importance": 0.02517682857966252
+        },
+        {
+            "feature": "Item_Wheat",
+            "importance": 0.022712902353040895
+        },
+        {
+            "feature": "pesticides_tonnes",
+            "importance": 0.02098820316354102
+        },
+        {
+            "feature": "avg_temp",
+            "importance": 0.018814764332832575
+        },
+        {
+            "feature": "gdd",
+            "importance": 0.018389072076714794
+        },
+        {
+            "feature": "Item_Yams",
+            "importance": 0.016982963444845525
+        },
+        {
+            "feature": "tech_trend",
+            "importance": 0.016575029672146004
+        },
+        {
+            "feature": "Area_Australia",
+            "importance": 0.01645574640224421
+        },
+        {
+            "feature": "Area_United Kingdom",
+            "importance": 0.01628220189674203
+        }
+    ],
+    "limitations_and_error_sources": [
+        "Macro-level regional rainfall averages do not capture localized field microclimates or drip irrigation scheduling.",
+        "Pesticide figures represent gross national active ingredients rather than parcel-specific application timing.",
+        "Extreme weather shock events (e.g. unseasonal hailstorms, sudden late heatwaves) are unmeasured in seasonal means.",
+        "Soil physicochemical characteristics (organic carbon, soil texture) vary sub-regionally and further explain local yield variance."
+    ]
+}
